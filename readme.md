@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lcaballero/rstamp-cli.svg?branch=master)](https://travis-ci.org/) [![NPM version](https://badge.fury.io/js/rubber-stamp.svg)](http://badge.fury.io/js/rstamp-cli)
+[![Build Status](https://travis-ci.org/lcaballero/rstamp-cli.svg?branch=master)](https://travis-ci.org/) [![NPM version](https://badge.fury.io/js/rstamp-cli.svg)](http://badge.fury.io/js/rstamp-cli)
 
 # Introduction
 
