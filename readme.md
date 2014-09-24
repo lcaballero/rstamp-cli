@@ -1,4 +1,6 @@
-# Introduction [![Build Status](https://travis-ci.org/lcaballero/rstamp-cli.svg?branch=master)](https://travis-ci.org/)
+[![Build Status](https://travis-ci.org/lcaballero/rstamp-cli.svg?branch=master)](https://travis-ci.org/) [![NPM version](https://badge.fury.io/js/rubber-stamp.svg)](http://badge.fury.io/js/rstamp-cli)
+
+# Introduction
 
 `rstamp-cli` is a Node.js command line tool that runs `rstamp-generators`.
 

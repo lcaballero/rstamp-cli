@@ -1,8 +1,11 @@
 {
   "name": "rstamp-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter list --compilers coffee:coffee-script/register tests/"
+  },
   "bin": {
     "rstamp": "index.js"
   },
