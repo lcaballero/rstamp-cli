@@ -1,7 +1,8 @@
 {
   "name": "rstamp-cli",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.4",
+  "description": "rstamp-cli is a Node.js command line tool that runs rstamp-generators.",
+  "repository": "https://github.com/lcaballero/rstamp-cli.git",
   "main": "index.js",
   "scripts": {
     "test": "mocha --reporter list --compilers coffee:coffee-script/register tests/"
