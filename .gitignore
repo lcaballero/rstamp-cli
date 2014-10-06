@@ -58,6 +58,11 @@ doc/*
 docs/*
 node_modules/*
 
+# generated help text
+usage.txt
+list.txt
+config.txt
+
 
 
 

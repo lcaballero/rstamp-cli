@@ -16,6 +16,7 @@
   "dependencies": {
     "cli-color": "^0.3.2",
     "coffee-script": "^1.7.1",
+    "inquirer": "^0.8.0",
     "lodash": "^2.4.1",
     "nject": "^1.2.1",
     "npm": "^1.4.21"

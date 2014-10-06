@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+rstamp    > usage.txt
+rstamp -l > list.txt
+rstamp -c > config.txt
+
+

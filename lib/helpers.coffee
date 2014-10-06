@@ -14,11 +14,11 @@ module.exports = (npm) ->
       _.filter(_.filter(packages, (p) -> /^rstamp-/.test(p)), (name) -> name isnt 'rstamp-cli')
 
     descriptions: () ->
-      ts = _.map(@rstamps(), (name) => {
+      _.map(@rstamps(), (name) =>
         name: name
         path: path.resolve(@npm.globalDir, name)
         json: @readDescription(@npm.globalDir, name)
-      })
+      )
 
     readDescription: (dir, name) ->
       moduleDir = path.resolve(dir, name)
