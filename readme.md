@@ -91,5 +91,5 @@ notice, or any other, from this software.
 
 [EPL-1]: http://opensource.org/licenses/eclipse-1.0.txt
 [express-train-1]: https://github.com/lcaballero/rstamp-express-train-1
-[gen-gen]: https://github.com/lcaballero/gen-gen
-[new-npm]: https://github.com/lcaballero/new-npm
+[gen-gen]: https://github.com/lcaballero/rstamp-gen-gen
+[new-npm]: https://github.com/lcaballero/rstamp-new-npm
