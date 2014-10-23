@@ -27,6 +27,12 @@ questions = (conf) ->
       default : conf.repoPrefix
     }
     {
+      name    : "travisUsername"
+      type    : "input"
+      message : "What travis user would you like to use?  Usage: travis badge in readme.md files."
+      default : conf.travisUsername
+    }
+    {
       name    : "license"
       type    : "input"
       message : "What license would you like to use a default?"

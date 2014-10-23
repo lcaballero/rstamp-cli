@@ -30,12 +30,18 @@ npm.load((err, npm) ->
 
   if err? then return console.log(JSON.stringify(err))
 
-  h = new Helpers(npm)
+  nogen = path.resolve(process.cwd(), ".rstamp.nogen")
 
-  if cmd.internal?          then cmds.internals.run(h, cmd)
-  else if cmd.list?         then cmds.list.run(h, cmd)
-  else if cmd.generate      then cmds.generate.run(h, cmd)
-  else if cmd.rstamprc      then cmds.rstamprc.run(h, cmd)
-  else if cmd.configuration then cmds.showConfig.run(h, cmd)
-  else cmd.outputHelp()
+  if fs.existsSync(nogen)
+    console.log("#{nogen} file is present in target directory.")
+    console.log("Aborting generation.")
+  else
+    h = new Helpers(npm)
+
+    if cmd.internal?          then cmds.internals.run(h, cmd)
+    else if cmd.list?         then cmds.list.run(h, cmd)
+    else if cmd.generate      then cmds.generate.run(h, cmd)
+    else if cmd.rstamprc      then cmds.rstamprc.run(h, cmd)
+    else if cmd.configuration then cmds.showConfig.run(h, cmd)
+    else cmd.outputHelp()
 )
