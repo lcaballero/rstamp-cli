@@ -1,5 +1,6 @@
 _     = require('lodash')
 conf  = require('../config')
+path  = require('path')
 
 
 module.exports =
@@ -15,7 +16,10 @@ module.exports =
         desc    = _.first(_.filter(rstamps, (f) -> f.name is ('rstamp-' + cmd.args[0])))
 
         if desc
-          require(desc.path)(conf.currentConfig())
+          try
+            require(desc.path)(conf.currentConfig())
+          catch ex
+            throw new Error("Attempting to look-up #{desc.path} (name: #{name}). " + ex.message)
         else
           console.log("Could not find %j", cmd.args[0])
 

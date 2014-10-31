@@ -1,6 +1,6 @@
 {
   "name": "rstamp-cli",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "rstamp-cli is a Node.js command line tool that runs rstamp-generators.",
   "repository": "https://github.com/lcaballero/rstamp-cli.git",
   "main": "index.js",
